@@ -39,8 +39,9 @@
         myGamePiece.speedY += 0.1;
         if (myGamePiece.y > 235) {myGamePiece.y = 235;}
         if (myGamePiece.y < 0) {myGamePiece.y = 0;}
+        else if (myGameArea.key && myGameArea.key == 32) {myGamePiece.speedY += -0.3; }
         if (myGamePiece.speedY > 5) {myGamePiece.speedY = 5;}
-        if (myGameArea.key && myGameArea.key == 32) {myGamePiece.speedY += -0.3; }
+        
 
         myGamePiece.newPos(); 
         myGamePiece.update();
